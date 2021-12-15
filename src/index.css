@@ -1,0 +1,100 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #fafafa;
+  font-family: 'Helvetica Neue', arial, sans-serif;
+  font-weight: 400;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; only for debug */
+}
+
+#app {
+  height: 100%;
+  text-align: center;
+  background-color: teal;
+  color: #fff;
+  font-size: 3rem;
+
+  display: grid;
+  grid-template-columns: 5fr 2fr 5fr;
+}
+
+.score {
+  display: grid;
+  grid-template-rows: 1fr 4fr 1fr;
+  margin: 2rem;
+}
+
+.score header input {
+  /* margin: auto; */
+  /* width: 10rem; */
+  text-align: center;
+  /* padding: 0.5rem; */
+  font-size: 2rem;
+  background-color: unset;
+  color: white;
+  border: unset;
+}
+
+.score header, .score footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.score footer button {
+  margin: auto;
+  padding: 0.5rem;
+  font-size: 2rem;
+  background-color: unset;
+  color: white;
+  border: unset;
+}
+
+.score footer button:hover {
+  background-color: #44444444;
+}
+
+.score footer button:active {
+  background-color: #88888888;
+}
+
+.score main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 10rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+nav button {
+  margin: auto;
+  padding: 0.5rem;
+  font-size: 2rem;
+  background-color: unset;
+  color: white;
+  border: unset;
+}
+
+nav button:hover {
+  background-color: #44444444;
+}
+
+nav button:active {
+  background-color: #88888888;
+}
