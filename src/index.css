@@ -20,18 +20,18 @@ body {
 #app {
   height: 100%;
   text-align: center;
-  background-color: teal;
+  background-color: darkslategray;
   color: #fff;
   font-size: 3rem;
 
   display: grid;
-  grid-template-columns: 5fr 2fr 5fr;
+  grid-template-columns: 4fr 4fr 4fr;
 }
 
 .score {
   display: grid;
-  grid-template-rows: 1fr 4fr 1fr;
-  margin: 2rem;
+  grid-template-rows: 1fr 5fr/* 1fr*/;
+  margin: 0.5rem;
 }
 
 .score header input {
@@ -51,7 +51,7 @@ body {
   align-items: center;
 }
 
-.score footer button {
+/* .score footer button {
   margin: auto;
   padding: 0.5rem;
   font-size: 2rem;
@@ -66,21 +66,34 @@ body {
 
 .score footer button:active {
   background-color: #88888888;
-}
+} */
 
 .score main {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  font-size: 10rem;
+  font-size: 15rem;
+  font-weight: bold;
+}
+@media (min-height: 450px) {
+  .score main {
+    font-size: 20rem;
+  }
+}
+.score main.service {
+  color: yellow;
+}
+.score main.change-side {
+  color: orange;
 }
 
 nav {
-  display: flex;
+  display: grid;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 nav button {
   margin: auto;
